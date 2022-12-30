@@ -1,0 +1,176 @@
+{
+    "name": "Player1Input",
+    "maps": [
+        {
+            "name": "Player1",
+            "id": "76071af9-bb10-45cb-8320-078d732f0c37",
+            "actions": [
+                {
+                    "name": "Throw",
+                    "type": "Button",
+                    "id": "bdb9c8ad-08b6-4c30-b11e-1f47b531f259",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Move",
+                    "type": "Value",
+                    "id": "d9cf3e85-c4bd-4956-9a73-95b36e76d28c",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "MoveTouch",
+                    "type": "PassThrough",
+                    "id": "b93bca39-7815-453e-8a61-e2a13d4aae47",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "MovePress",
+                    "type": "Button",
+                    "id": "ece26387-c2bd-4dc0-ba7a-5ce9114e3f34",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Press",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "MoveTouchPosition",
+                    "type": "PassThrough",
+                    "id": "f8749099-613b-45c6-8cec-13b32b29e40f",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "ThrowPress",
+                    "type": "PassThrough",
+                    "id": "d37e76d0-85ef-43b3-ac62-743aa06d7f7b",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "ThrowPress1",
+                    "type": "Button",
+                    "id": "6a9517ea-43f9-487c-b7f7-3bfcce78b926",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "f649bc54-edbf-4f6d-8598-66a16fc272a5",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Throw",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "2D Vector",
+                    "id": "9bf63432-dca8-4617-86f0-074cceb23103",
+                    "path": "2DVector",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "left",
+                    "id": "4aba43bb-b0bb-4fce-95d1-23430a62a7b6",
+                    "path": "<Keyboard>/a",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "right",
+                    "id": "46484acf-f12f-40b1-815d-620322f7f708",
+                    "path": "<Keyboard>/d",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "bd048002-fd31-4c40-8891-90b5ef01b97f",
+                    "path": "<Touchscreen>/primaryTouch",
+                    "interactions": "Hold",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MoveTouch",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "fe74b532-a2ef-4381-b982-2688e22d6062",
+                    "path": "<Touchscreen>/primaryTouch/press",
+                    "interactions": "Hold(duration=0.2,pressPoint=0.2)",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MovePress",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "e07ac52e-37b3-4fb1-9b68-b5c12b33f3be",
+                    "path": "<Touchscreen>/primaryTouch/position",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MoveTouchPosition",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "1e44752d-850a-4ab7-96a9-f16cb0253cb8",
+                    "path": "<Touchscreen>/primaryTouch/press",
+                    "interactions": "Tap(duration=0.2)",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ThrowPress",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "d501fdbe-1dba-4152-bc8b-f1781c9d957e",
+                    "path": "<Touchscreen>/touch1/press",
+                    "interactions": "Tap",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ThrowPress1",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
